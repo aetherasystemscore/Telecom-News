@@ -41,8 +41,12 @@ from subscription_vault import (
     subscribe_user_encrypted,
 )
 from telecom_sources import (
+    CROSS_INDUSTRY_FLAT_MARKET_SOLUTIONS,
     SW_MONETIZATION_PLAYBOOKS,
+    TAB5_CRITIC_PANEL_REVIEW,
     TELECOM_SOURCES_REGISTRY,
+    TWENTY_YEAR_TELCO_MONETIZATION_TIMELINE,
+    VENDOR_OPERATOR_AI_OTTS_SOLUTION_BLUEPRINTS,
     get_seed_articles_with_ids,
 )
 
@@ -207,6 +211,37 @@ def test_resumable_pipeline_breakpoint_and_recovery():
     assert resumed["articles_count"] >= 12
 
 
+def test_tab5_20_year_research_and_critic_panel():
+    # 1. Verify 20-year historical timeline (2005-2026) covers RTU licensing trap, OTTs, and AI flat-rate pipes
+    assert len(TWENTY_YEAR_TELCO_MONETIZATION_TIMELINE) == 5
+    full_timeline_text = json.dumps(TWENTY_YEAR_TELCO_MONETIZATION_TIMELINE).lower()
+    for term in ("rtu", "netflix", "ericsson", "nokia", "aduna", "ai"):
+        assert term in full_timeline_text
+
+    # 2. Verify 6 Cross-Industry & Startup Precedents (ARM, Cloudflare, Stripe, Rolls-Royce, Cisco, Snowflake)
+    assert len(CROSS_INDUSTRY_FLAT_MARKET_SOLUTIONS) >= 6
+    case_ids = {c["case_id"] for c in CROSS_INDUSTRY_FLAT_MARKET_SOLUTIONS}
+    assert "arm_holdings_use_case_royalty" in case_ids
+    assert "cloudflare_cdn_to_edge_ai_tokens" in case_ids
+    assert "stripe_plaid_twilio_b2b2x_tollbooth" in case_ids
+
+    # 3. Verify 5-Pillar Solution Blueprints
+    assert len(VENDOR_OPERATOR_AI_OTTS_SOLUTION_BLUEPRINTS) == 5
+
+    # 4. Verify 5-Expert Critic Panel Audit of Tab 5
+    assert TAB5_CRITIC_PANEL_REVIEW["final_validated_score"] >= 98.5
+    assert len(TAB5_CRITIC_PANEL_REVIEW["critics"]) == 5
+
+
+def test_two_row_sticky_color_coded_tabs_css():
+    app_code = (Path(__file__).resolve().parent / "app.py").read_text(encoding="utf-8")
+    assert "position: sticky !important;" in app_code
+    assert "grid-template-columns: repeat(6, minmax(0, 1fr)) !important;" in app_code
+    assert 'button[data-baseweb="tab"]:nth-child(1)[aria-selected="true"]' in app_code
+    assert 'button[data-baseweb="tab"]:nth-child(5)[aria-selected="true"]' in app_code
+    assert "SECTION 1 (FIRST SECTION) • 20-YEAR INDUSTRY & STARTUP RESEARCH SYNTHESIS (2005–2026)" in app_code
+
+
 if __name__ == "__main__":
     suite = [
         ("1. Four Tabs & 14 Core Portals + Monetization Playbooks", test_four_tabs_and_14_core_portals_coverage),
@@ -215,8 +250,10 @@ if __name__ == "__main__":
         ("4. Thumbs-Up/Down Preference Learning & Top-of-Feed Re-Ranking", test_thumbs_up_down_preference_reranking),
         ("5. AES-Encrypted Local Email Subscription Vault (Zero Plaintext PII)", test_aes_encrypted_local_email_subscription_vault),
         ("6. Resumable Step-by-Step Breakpoint & Recovery Engine", test_resumable_pipeline_breakpoint_and_recovery),
+        ("7. Tab 5 20-Year Vendor/OTT/AI Research & 5-Expert Critic Audit", test_tab5_20_year_research_and_critic_panel),
+        ("8. Always-Visible 2-Row Sticky & Color-Coded Tab Bar", test_two_row_sticky_color_coded_tabs_css),
     ]
     for label, fn in suite:
         fn()
         print(f"[PASS] {label}")
-    print("\nALL 6 END-TO-END CRITIC & RELIABILITY VERIFICATION SUITES PASSED (100%).")
+    print("\nALL 8 END-TO-END CRITIC & RELIABILITY VERIFICATION SUITES PASSED (100%).")

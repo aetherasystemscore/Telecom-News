@@ -1,31 +1,52 @@
 {
-  "updated_at": "2026-10-31T14:40:30Z",
-  "article_votes": {},
+  "updated_at": "2026-10-31T16:32:35Z",
+  "article_votes": {
+    "1b9897a8-e071-5a8a-b12d-f188ad385f41": {
+      "thumbs_up": 2,
+      "thumbs_down": 0,
+      "last_action": "up"
+    }
+  },
   "tag_weights": {
-    "5G-Advanced": 2.0,
-    "Telco AI/LTM": 2.5,
-    "BSS/OSS": 2.5,
-    "Open RAN": 2.0,
+    "5G-Advanced": 8.0,
+    "Telco AI/LTM": 8.5,
+    "BSS/OSS": 8.5,
+    "Open RAN": 8.0,
     "D2D": 2.0,
     "6G": 1.5,
-    "Edge Compute": 2.0,
+    "Edge Compute": 8.0,
     "Subsea": 1.5
   },
   "vendor_weights": {
-    "Ericsson": 3.0,
-    "Nokia": 3.0,
-    "Huawei": 3.0,
-    "Samsung": 1.5,
+    "Ericsson": 10.2,
+    "Nokia": 10.2,
+    "Huawei": 10.2,
+    "Samsung": 8.7,
     "Mavenir": 1.5,
-    "Amdocs": 2.0,
-    "Cisco": 1.5,
+    "Amdocs": 9.2,
+    "Cisco": 8.7,
     "Ciena": 1.5
   },
   "theme_weights": {
-    "pricing_monetization": 5.0,
-    "hw_scarcity": 4.5
+    "pricing_monetization": 12.8,
+    "hw_scarcity": 12.3
   },
-  "source_weights": {},
+  "source_weights": {
+    "Light Reading": 4.8
+  },
   "bookmarks": [],
-  "vote_history": []
+  "vote_history": [
+    {
+      "timestamp": "2026-10-31T16:32:35Z",
+      "article_id": "1b9897a8-e071-5a8a-b12d-f188ad385f41",
+      "title": "Breaking the RAN RTU License Trap: How AI-RAN Alliance & ARM-Style Value Royalties Redefin",
+      "vote": "up"
+    },
+    {
+      "timestamp": "2026-10-31T16:32:35Z",
+      "article_id": "1b9897a8-e071-5a8a-b12d-f188ad385f41",
+      "title": "Breaking the RAN RTU License Trap: How AI-RAN Alliance & ARM-Style Value Royalties Redefin",
+      "vote": "up"
+    }
+  ]
 }

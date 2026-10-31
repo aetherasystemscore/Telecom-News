@@ -2,7 +2,7 @@
   "pipeline_name": "Telecom 14-Portal + Vendor/Monetization Ingestion & AI Pipeline",
   "status": "COMPLETED",
   "percent_complete": 100.0,
-  "current_step_no": 5,
+  "current_step_no": 2,
   "total_steps": 5,
   "current_stage_label": "Completed (100%)",
   "current_unit_id": null,
@@ -29,52 +29,283 @@
   "failed_unit": null,
   "failure_reason": null,
   "can_resume": false,
-  "started_at": "2026-10-31T14:20:00Z",
-  "updated_at": "2026-10-31T14:25:30Z",
-  "completed_at": "2026-10-31T14:25:30Z",
+  "started_at": "2026-10-31T16:32:35Z",
+  "updated_at": "2026-10-31T16:32:36Z",
+  "completed_at": "2026-10-31T16:32:36Z",
   "ongoing_events": [
     {
-      "timestamp": "2026-10-31T14:20:00Z",
+      "timestamp": "2026-10-31T16:32:35Z",
       "percent": 0.0,
       "stage": "Pipeline Initialized",
       "level": "INFO",
-      "message": "Started pipeline run across 17 Telecom, Vendor & Startup Monetization feeds (0.0%)."
+      "message": "Started fresh pipeline run across 17 work units (0.0%)."
     },
     {
-      "timestamp": "2026-10-31T14:21:10Z",
+      "timestamp": "2026-10-31T16:32:35Z",
+      "percent": 0.0,
+      "stage": "Ingesting & AI-Tagging: Fierce Network",
+      "level": "ONGOING",
+      "message": "[0.0%] Starting unit 'Fierce Network (Market)' (1/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:35Z",
+      "percent": 5.9,
+      "stage": "Verified Fierce Network",
+      "level": "SUCCESS",
+      "message": "[5.9%] Completed 'Fierce Network (Market)' (1/17 units done; +1 verified items)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:35Z",
+      "percent": 5.9,
+      "stage": "Ingesting & AI-Tagging: Light Reading",
+      "level": "ONGOING",
+      "message": "[5.9%] Starting unit 'Light Reading (Market)' (2/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:35Z",
+      "percent": 11.8,
+      "stage": "Verified Light Reading",
+      "level": "SUCCESS",
+      "message": "[11.8%] Completed 'Light Reading (Market)' (2/17 units done; +1 verified items)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:35Z",
+      "percent": 11.8,
+      "stage": "Ingesting & AI-Tagging: Total Telecom",
+      "level": "ONGOING",
+      "message": "[11.8%] Starting unit 'Total Telecom (Market)' (3/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:35Z",
       "percent": 17.6,
-      "stage": "Tab 1: Market & Deals",
+      "stage": "Verified Total Telecom",
       "level": "SUCCESS",
-      "message": "[17.6%] Ingested & verified Fierce Network, Light Reading, Total Telecom."
+      "message": "[17.6%] Completed 'Total Telecom (Market)' (3/17 units done; +1 verified items)."
     },
     {
-      "timestamp": "2026-10-31T14:22:30Z",
+      "timestamp": "2026-10-31T16:32:35Z",
+      "percent": 17.6,
+      "stage": "Ingesting & AI-Tagging: 3GPP News & Updates",
+      "level": "ONGOING",
+      "message": "[17.6%] Starting unit '3GPP News & Updates (Standards)' (4/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:35Z",
+      "percent": 23.5,
+      "stage": "Verified 3GPP News & Updates",
+      "level": "SUCCESS",
+      "message": "[23.5%] Completed '3GPP News & Updates (Standards)' (4/17 units done; +1 verified items)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:35Z",
+      "percent": 23.5,
+      "stage": "Ingesting & AI-Tagging: TM Forum Inform",
+      "level": "ONGOING",
+      "message": "[23.5%] Starting unit 'TM Forum Inform (Standards)' (5/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:35Z",
+      "percent": 29.4,
+      "stage": "Verified TM Forum Inform",
+      "level": "SUCCESS",
+      "message": "[29.4%] Completed 'TM Forum Inform (Standards)' (5/17 units done; +1 verified items)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 29.4,
+      "stage": "Ingesting & AI-Tagging: ITU News",
+      "level": "ONGOING",
+      "message": "[29.4%] Starting unit 'ITU News (Standards)' (6/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 35.3,
+      "stage": "Verified ITU News",
+      "level": "SUCCESS",
+      "message": "[35.3%] Completed 'ITU News (Standards)' (6/17 units done; +1 verified items)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 35.3,
+      "stage": "Ingesting & AI-Tagging: GSMA Newsroom & Reports",
+      "level": "ONGOING",
+      "message": "[35.3%] Starting unit 'GSMA Newsroom & Reports (Standards)' (7/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 35.3,
+      "stage": "Interrupted / Paused at Breakpoint",
+      "level": "ERROR",
+      "message": "[35.3%] BREAKPOINT at 'gsma_newsroom': Connection timeout / simulated breakpoint while fetching 'GSMA Newsroom & Reports'. State saved atomically (6 units preserved). Ready to resume from exact breakpoint."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 35.3,
+      "stage": "Resuming from Checkpoint",
+      "level": "RESUMED",
+      "message": "Resumed execution from checkpoint at 35.3% (6/17 units already verified; skipping completed work)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 35.3,
+      "stage": "Ingesting & AI-Tagging: GSMA Newsroom & Reports",
+      "level": "ONGOING",
+      "message": "[35.3%] Starting unit 'GSMA Newsroom & Reports (Standards)' (7/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
       "percent": 41.2,
-      "stage": "Tab 2: Standards & Tech",
+      "stage": "Verified GSMA Newsroom & Reports",
       "level": "SUCCESS",
-      "message": "[41.2%] Ingested & verified 3GPP News, TM Forum Inform, ITU News, GSMA Newsroom."
+      "message": "[41.2%] Completed 'GSMA Newsroom & Reports (Standards)' (7/17 units done; +1 verified items)."
     },
     {
-      "timestamp": "2026-10-31T14:23:45Z",
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 41.2,
+      "stage": "Ingesting & AI-Tagging: SpaceNews",
+      "level": "ONGOING",
+      "message": "[41.2%] Starting unit 'SpaceNews (Convergence)' (8/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 47.1,
+      "stage": "Verified SpaceNews",
+      "level": "SUCCESS",
+      "message": "[47.1%] Completed 'SpaceNews (Convergence)' (8/17 units done; +1 verified items)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 47.1,
+      "stage": "Ingesting & AI-Tagging: Via Satellite",
+      "level": "ONGOING",
+      "message": "[47.1%] Starting unit 'Via Satellite (Convergence)' (9/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 52.9,
+      "stage": "Verified Via Satellite",
+      "level": "SUCCESS",
+      "message": "[52.9%] Completed 'Via Satellite (Convergence)' (9/17 units done; +1 verified items)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 52.9,
+      "stage": "Ingesting & AI-Tagging: Cloudflare Radar",
+      "level": "ONGOING",
+      "message": "[52.9%] Starting unit 'Cloudflare Radar (Convergence)' (10/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 58.8,
+      "stage": "Verified Cloudflare Radar",
+      "level": "SUCCESS",
+      "message": "[58.8%] Completed 'Cloudflare Radar (Convergence)' (10/17 units done; +1 verified items)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 58.8,
+      "stage": "Ingesting & AI-Tagging: Cloudflare Blog",
+      "level": "ONGOING",
+      "message": "[58.8%] Starting unit 'Cloudflare Blog (Convergence)' (11/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 64.7,
+      "stage": "Verified Cloudflare Blog",
+      "level": "SUCCESS",
+      "message": "[64.7%] Completed 'Cloudflare Blog (Convergence)' (11/17 units done; +1 verified items)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 64.7,
+      "stage": "Ingesting & AI-Tagging: TelecomTV",
+      "level": "ONGOING",
+      "message": "[64.7%] Starting unit 'TelecomTV (Convergence)' (12/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
       "percent": 70.6,
-      "stage": "Tab 3: Convergence & Space",
+      "stage": "Verified TelecomTV",
       "level": "SUCCESS",
-      "message": "[70.6%] Ingested & verified SpaceNews, Via Satellite, Cloudflare Radar, Cloudflare Blog, TelecomTV."
+      "message": "[70.6%] Completed 'TelecomTV (Convergence)' (12/17 units done; +1 verified items)."
     },
     {
-      "timestamp": "2026-10-31T14:24:50Z",
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 70.6,
+      "stage": "Ingesting & AI-Tagging: Ericsson Reports & Insights",
+      "level": "ONGOING",
+      "message": "[70.6%] Starting unit 'Ericsson Reports & Insights (Whitepapers)' (13/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 76.5,
+      "stage": "Verified Ericsson Reports & Insights",
+      "level": "SUCCESS",
+      "message": "[76.5%] Completed 'Ericsson Reports & Insights (Whitepapers)' (13/17 units done; +1 verified items)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 76.5,
+      "stage": "Ingesting & AI-Tagging: Nokia Bell Labs & News",
+      "level": "ONGOING",
+      "message": "[76.5%] Starting unit 'Nokia Bell Labs & News (Whitepapers)' (14/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 82.4,
+      "stage": "Verified Nokia Bell Labs & News",
+      "level": "SUCCESS",
+      "message": "[82.4%] Completed 'Nokia Bell Labs & News (Whitepapers)' (14/17 units done; +1 verified items)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 82.4,
+      "stage": "Ingesting & AI-Tagging: Huawei Carrier & R&D Watch",
+      "level": "ONGOING",
+      "message": "[82.4%] Starting unit 'Huawei Carrier & R&D Watch (Standards)' (15/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
       "percent": 88.2,
-      "stage": "Tab 4: Whitepapers & R&D",
+      "stage": "Verified Huawei Carrier & R&D Watch",
       "level": "SUCCESS",
-      "message": "[88.2%] Ingested & verified Ericsson Reports & Insights, Nokia Bell Labs & News."
+      "message": "[88.2%] Completed 'Huawei Carrier & R&D Watch (Standards)' (15/17 units done; +1 verified items)."
     },
     {
-      "timestamp": "2026-10-31T14:25:30Z",
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 88.2,
+      "stage": "Ingesting & AI-Tagging: Telecom HW Scarcity & Supply Chain Monitor",
+      "level": "ONGOING",
+      "message": "[88.2%] Starting unit 'Telecom HW Scarcity & Supply Chain Monitor (Standards)' (16/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 94.1,
+      "stage": "Verified Telecom HW Scarcity & Supply Chain Monitor",
+      "level": "SUCCESS",
+      "message": "[94.1%] Completed 'Telecom HW Scarcity & Supply Chain Monitor (Standards)' (16/17 units done; +1 verified items)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 94.1,
+      "stage": "Ingesting & AI-Tagging: Flat-Market Pricing & Startup SW Monetization Lab",
+      "level": "ONGOING",
+      "message": "[94.1%] Starting unit 'Flat-Market Pricing & Startup SW Monetization Lab (Market)' (17/17)..."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
+      "percent": 99.0,
+      "stage": "Verified Flat-Market Pricing & Startup SW Monetization Lab",
+      "level": "SUCCESS",
+      "message": "[99.0%] Completed 'Flat-Market Pricing & Startup SW Monetization Lab (Market)' (17/17 units done; +1 verified items)."
+    },
+    {
+      "timestamp": "2026-10-31T16:32:36Z",
       "percent": 100.0,
       "stage": "Completed (100%)",
       "level": "SUCCESS",
-      "message": "[100.0%] Completed Huawei Carrier Watch, HW Scarcity Monitor & Flat-Market SW Monetization Lab + Cosine Deduplication."
+      "message": "[100.0%] Pipeline 100% complete: 18 verified articles stored across 4 Tabs (0 cross-outlet duplicates merged via cosine similarity)."
     }
   ],
-  "partial_results_count": 15
+  "partial_results_count": 17
 }
