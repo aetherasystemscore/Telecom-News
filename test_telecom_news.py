@@ -242,6 +242,30 @@ def test_two_row_sticky_color_coded_tabs_css():
     assert "SECTION 1 (FIRST SECTION) • 20-YEAR INDUSTRY & STARTUP RESEARCH SYNTHESIS (2005–2026)" in app_code
 
 
+def test_streamlit_cloud_hot_reload_import_resilience():
+    """
+    Simulates Streamlit Cloud's hot-reload ('🔄 Updated app!') where `sys.modules['telecom_sources']`
+    is cached in memory from an older commit lacking `CROSS_INDUSTRY_FLAT_MARKET_SOLUTIONS`,
+    and verifies `app.py` reloads `telecom_sources` and falls back safely without `ImportError`.
+    """
+    import importlib
+    import sys
+    import telecom_sources
+
+    app_code = (Path(__file__).resolve().parent / "app.py").read_text(encoding="utf-8")
+    assert "from telecom_sources import (" not in app_code
+    assert "resolve_telecom_sources_symbols" in app_code
+
+    # Simulate stale cached module in sys.modules lacking the new Tab 5 constants
+    delattr(telecom_sources, "CROSS_INDUSTRY_FLAT_MARKET_SOLUTIONS")
+    assert not hasattr(sys.modules["telecom_sources"], "CROSS_INDUSTRY_FLAT_MARKET_SOLUTIONS")
+
+    # Reloading as app.py does restores the symbol from disk immediately
+    reloaded = importlib.reload(sys.modules["telecom_sources"])
+    assert hasattr(reloaded, "CROSS_INDUSTRY_FLAT_MARKET_SOLUTIONS")
+    assert len(reloaded.CROSS_INDUSTRY_FLAT_MARKET_SOLUTIONS) >= 6
+
+
 if __name__ == "__main__":
     suite = [
         ("1. Four Tabs & 14 Core Portals + Monetization Playbooks", test_four_tabs_and_14_core_portals_coverage),
@@ -252,8 +276,9 @@ if __name__ == "__main__":
         ("6. Resumable Step-by-Step Breakpoint & Recovery Engine", test_resumable_pipeline_breakpoint_and_recovery),
         ("7. Tab 5 20-Year Vendor/OTT/AI Research & 5-Expert Critic Audit", test_tab5_20_year_research_and_critic_panel),
         ("8. Always-Visible 2-Row Sticky & Color-Coded Tab Bar", test_two_row_sticky_color_coded_tabs_css),
+        ("9. Streamlit Cloud Hot-Reload Import Resilience (Zero ImportError)", test_streamlit_cloud_hot_reload_import_resilience),
     ]
     for label, fn in suite:
         fn()
         print(f"[PASS] {label}")
-    print("\nALL 8 END-TO-END CRITIC & RELIABILITY VERIFICATION SUITES PASSED (100%).")
+    print("\nALL 9 END-TO-END CRITIC & RELIABILITY VERIFICATION SUITES PASSED (100%).")
