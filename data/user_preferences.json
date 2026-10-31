@@ -1,0 +1,31 @@
+{
+  "updated_at": "2026-10-31T14:40:30Z",
+  "article_votes": {},
+  "tag_weights": {
+    "5G-Advanced": 2.0,
+    "Telco AI/LTM": 2.5,
+    "BSS/OSS": 2.5,
+    "Open RAN": 2.0,
+    "D2D": 2.0,
+    "6G": 1.5,
+    "Edge Compute": 2.0,
+    "Subsea": 1.5
+  },
+  "vendor_weights": {
+    "Ericsson": 3.0,
+    "Nokia": 3.0,
+    "Huawei": 3.0,
+    "Samsung": 1.5,
+    "Mavenir": 1.5,
+    "Amdocs": 2.0,
+    "Cisco": 1.5,
+    "Ciena": 1.5
+  },
+  "theme_weights": {
+    "pricing_monetization": 5.0,
+    "hw_scarcity": 4.5
+  },
+  "source_weights": {},
+  "bookmarks": [],
+  "vote_history": []
+}

@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Encrypted subscriber vault master key, local secrets & temporary files
+data/.vault_key
+data/.vault_salt
+data/subscribers_vault.enc
+data/partial_ingested_articles.json
+*.tmp.*
+.streamlit/secrets.toml
+.env
+check_scratch.py
+out.txt
+
+# OS artifacts
+.DS_Store
+Thumbs.db

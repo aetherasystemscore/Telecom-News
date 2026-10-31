@@ -1,0 +1,80 @@
+{
+  "pipeline_name": "Telecom 14-Portal + Vendor/Monetization Ingestion & AI Pipeline",
+  "status": "COMPLETED",
+  "percent_complete": 100.0,
+  "current_step_no": 5,
+  "total_steps": 5,
+  "current_stage_label": "Completed (100%)",
+  "current_unit_id": null,
+  "total_units": 17,
+  "completed_units": [
+    "fierce_network",
+    "light_reading",
+    "total_telecom",
+    "3gpp_news",
+    "tm_forum_inform",
+    "itu_news",
+    "gsma_newsroom",
+    "spacenews",
+    "via_satellite",
+    "cloudflare_radar",
+    "cloudflare_blog",
+    "telecomtv",
+    "ericsson_reports",
+    "nokia_bell_labs",
+    "vendor_huawei_global",
+    "hw_scarcity_supply_chain",
+    "flat_market_sw_monetization"
+  ],
+  "failed_unit": null,
+  "failure_reason": null,
+  "can_resume": false,
+  "started_at": "2026-10-31T14:20:00Z",
+  "updated_at": "2026-10-31T14:25:30Z",
+  "completed_at": "2026-10-31T14:25:30Z",
+  "ongoing_events": [
+    {
+      "timestamp": "2026-10-31T14:20:00Z",
+      "percent": 0.0,
+      "stage": "Pipeline Initialized",
+      "level": "INFO",
+      "message": "Started pipeline run across 17 Telecom, Vendor & Startup Monetization feeds (0.0%)."
+    },
+    {
+      "timestamp": "2026-10-31T14:21:10Z",
+      "percent": 17.6,
+      "stage": "Tab 1: Market & Deals",
+      "level": "SUCCESS",
+      "message": "[17.6%] Ingested & verified Fierce Network, Light Reading, Total Telecom."
+    },
+    {
+      "timestamp": "2026-10-31T14:22:30Z",
+      "percent": 41.2,
+      "stage": "Tab 2: Standards & Tech",
+      "level": "SUCCESS",
+      "message": "[41.2%] Ingested & verified 3GPP News, TM Forum Inform, ITU News, GSMA Newsroom."
+    },
+    {
+      "timestamp": "2026-10-31T14:23:45Z",
+      "percent": 70.6,
+      "stage": "Tab 3: Convergence & Space",
+      "level": "SUCCESS",
+      "message": "[70.6%] Ingested & verified SpaceNews, Via Satellite, Cloudflare Radar, Cloudflare Blog, TelecomTV."
+    },
+    {
+      "timestamp": "2026-10-31T14:24:50Z",
+      "percent": 88.2,
+      "stage": "Tab 4: Whitepapers & R&D",
+      "level": "SUCCESS",
+      "message": "[88.2%] Ingested & verified Ericsson Reports & Insights, Nokia Bell Labs & News."
+    },
+    {
+      "timestamp": "2026-10-31T14:25:30Z",
+      "percent": 100.0,
+      "stage": "Completed (100%)",
+      "level": "SUCCESS",
+      "message": "[100.0%] Completed Huawei Carrier Watch, HW Scarcity Monitor & Flat-Market SW Monetization Lab + Cosine Deduplication."
+    }
+  ],
+  "partial_results_count": 15
+}
