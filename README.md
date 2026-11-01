@@ -2,7 +2,7 @@
 
 **Production-Grade Intelligence & Market Monitoring Application** tailored for telecom executives, network architects, software product strategists, and industry analysts.
 
-- **Repository:** [`https://github.com/purntripathi-cmd/Telecom-News`](https://github.com/purntripathi-cmd/Telecom-News)
+- **Repository:** [`https://github.com/aetherasystemscore/Telecom-News`](https://github.com/aetherasystemscore/Telecom-News)
 - **Entrypoint:** `app.py` (`streamlit run app.py`)
 - **Critic-Validated Reliability Score:** **99.1%** (Target $\ge 98.5\%$)
 
